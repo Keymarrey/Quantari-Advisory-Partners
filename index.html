@@ -1,4 +1,4 @@
-<!-- Redesigned Homepage for Quantari Advisory Partners Limited -->
+<!-- Revised Homepage for Quantari Advisory Partners Limited -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,6 @@
       line-height: 1.6;
     }
 
-    /* --- NAVBAR --- */
     nav {
       display: flex;
       justify-content: space-between;
@@ -41,7 +40,6 @@
       font-size: 1.75rem;
       font-weight: 700;
       color: var(--primary);
-      letter-spacing: 0.5px;
       display: flex;
       align-items: center;
     }
@@ -58,17 +56,12 @@
       text-decoration: none;
       color: var(--primary);
       font-weight: 500;
-      transition: 0.3s;
     }
 
-    nav ul li a:hover {
-      color: var(--accent);
-    }
-
-    /* --- HERO --- */
     .hero {
       padding: 140px 40px;
-      background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url('https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/refs/heads/main/assets/premium_photo-1663013625960-b54f861e4074.avif');
+      background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
+      url('https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/refs/heads/main/assets/premium_photo-1663013625960-b54f861e4074.avif');
       background-size: cover;
       background-position: center;
       color: white;
@@ -77,17 +70,15 @@
 
     .hero h1 {
       font-size: 2.8rem;
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto 20px;
       font-weight: 700;
-      letter-spacing: -0.5px;
     }
 
     .hero p {
-      max-width: 750px;
+      max-width: 800px;
       margin: 0 auto 30px;
       font-size: 1.2rem;
-      opacity: 0.95;
     }
 
     .hero .cta {
@@ -98,14 +89,8 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: 600;
-      transition: 0.3s;
     }
 
-    .hero .cta:hover {
-      background: #095bb1;
-    }
-
-    /* --- SERVICES --- */
     .section {
       max-width: 1100px;
       margin: 80px auto;
@@ -116,7 +101,7 @@
       text-align: center;
       font-size: 2rem;
       color: var(--primary);
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       font-weight: 700;
     }
 
@@ -131,27 +116,8 @@
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: 0.3s;
     }
 
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    }
-
-    .service-card h3 {
-      color: var(--secondary);
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-
-    .service-card p {
-      opacity: 0.9;
-      font-size: 1rem;
-    }
-
-    /* --- FOUNDER NOTE --- */
     .founder {
       background: white;
       padding: 50px;
@@ -159,26 +125,8 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       max-width: 900px;
       margin: 70px auto;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-style: italic;
-    }
-
-    .founder strong {
-      font-size: 1.15rem;
-      color: var(--primary);
-    }
-
-    /* --- CONTACT --- */
-    .contact {
-      text-align: center;
-      margin-top: 100px;
-      padding-bottom: 80px;
-    }
-
-    .contact a {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
     }
 
     footer {
@@ -187,152 +135,125 @@
       text-align: center;
       padding: 25px;
       font-size: 0.9rem;
-      margin-top: 40px;
     }
-    .under-construction {
-      text-align: center;
-      background: #ffefc8;
-      color: #7a5b00;
-      padding: 15px;
-      font-weight: 600;
-      border-bottom: 2px solid #ffd46a;
-      font-size: 1rem;
-    }
-
-    .close-btn {
-      margin-left: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    /* --- MOBILE RESPONSIVE FIXES --- */
-    @media (max-width: 768px) {
-      nav {
-        padding: 15px 20px;
-      }
-
-      nav .logo img {
-        height: 80px;
-        margin-right: 10px;
-      }
-
-      nav .logo {
-        font-size: 1.3rem;
-      }
-
-      nav ul {
-        gap: 18px;
-      }
-
-      .hero {
-        padding: 100px 20px;
-        background-position: center;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      .hero .cta {
-        padding: 12px 22px;
-        font-size: 0.95rem;
-      }
-
-      .section {
-        padding: 0 20px;
-        margin: 50px auto;
-      }
-
-      .services {
-        grid-template-columns: 1fr;
-      }
-
-      .founder {
-        margin: 40px 15px;
-        padding: 30px;
-        font-size: 1rem;
-      }
-
-      .contact {
-        margin-top: 60px;
-        padding-bottom: 50px;
-      }
-    }
-
-</style>
+  </style>
 </head>
+
 <body>
 
-  <div class="under-construction" id="banner">
-    🚧 Our website is under construction. The full experience launches soon. 🚧
-    <span class="close-btn" onclick="document.getElementById('banner').style.display='none'">✖</span>
+<nav>
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/main/assets/logo.png"
+         alt="Quantari Advisory Partners Limited Logo"
+         style="height:120px; margin-right:14px;">
+    Quantari Advisory Partners Limited
   </div>
+  <ul>
+    <li><a href="#services">What We Do</a></li>
+    <li><a href="#approach">Our Approach</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <div class="logo"><img src="https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/main/assets/logo.png" alt="Quantari Advisory Partners Limited Logo" style="height:150px; margin-right:14px;"> Quantari Advisory Partners Limited</div>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#insights">Insights</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<section class="hero">
+  <h1>Structuring Bankable & Investment-Ready Transactions for African Businesses</h1>
+  <p>
+    Quantari Advisory Partners is an independent deal origination and structuring platform
+    supporting mid-market businesses to access institutional capital through disciplined preparation,
+    clear information, and lender-aligned structuring.
+  </p>
+  <a class="cta" href="#services">Learn How We Work</a>
+</section>
 
-  <section class="hero">
-    <h1>Strategic Financial & Operational Guidance for Businesses in Transition</h1>
-    <p>Insight-led, relationship-driven, and built for leaders seeking clarity, structure, and momentum in critical moments of change.</p>
-    <a class="cta" href="#services">Explore Our Services</a>
-  </section>
+<section class="section">
+  <h2>Who We Work With</h2>
+  <p style="text-align:center; max-width:900px; margin:0 auto;">
+    We work with viable, operating businesses across Kenya and the region that have outgrown informal finance
+    and require structured engagement with banks, DFIs, and private credit providers.
+    Our typical clients operate in agribusiness, manufacturing, trade, logistics, and real-estate-linked sectors,
+    with established cashflows and financing needs that require institutional discipline.
+  </p>
+</section>
 
-  <section id="services" class="section">
-    <h2>What We Do</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Funding Readiness Support</h3>
-        <p>We help businesses prepare for financing by strengthening reporting, articulating needs, and building lender-ready structure.</p>
-      </div>
+<section id="services" class="section">
+  <h2>What We Do</h2>
+  <div class="services">
 
-      <div class="service-card">
-        <h3>Debt Optimization & Restructuring</h3>
-        <p>We evaluate financing structures, optimize facilities, and guide clients on how to approach lender discussions, structure information requests, and prepare materials that support transparent engagement.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Operational Transition Support</h3>
-        <p>Guiding businesses through shifts in systems, processes, and operating structure — enabling smoother transitions with clarity.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Growth & Expansion Planning</h3>
-        <p>Supporting leaders with scenario planning, capital structuring, and practical strategic frameworks for sustainable expansion.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Turnaround Advisory</h3>
-        <p>Helping organizations stabilize operations, regain control, and restore momentum during challenging periods.</p>
-      </div>
+    <div class="service-card">
+      <h3>Deal Origination & Structuring</h3>
+      <p>
+        We identify viable transactions and structure them to meet institutional credit and investment standards,
+        ensuring clarity on cashflows, risks, security, and use of funds.
+      </p>
     </div>
-  </section>
 
-  <section class="founder">
-    “Across 17 years in corporate and SME banking, I have seen how pivotal moments — growth, restructuring, or operational challenge — determine the trajectory of a business.
-    Quantari Advisory Partners was created to help leaders navigate these moments with clarity, structure, and strategic discipline.”
-    <br><br>
-    — <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
-  </section>
+    <div class="service-card">
+      <h3>Credit & Investment Readiness</h3>
+      <p>
+        Preparing businesses for engagement with banks, DFIs, and funds by organising financial information,
+        strengthening narratives, and aligning documentation to lender and investor requirements.
+      </p>
+    </div>
 
-  <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-    <p>📧 <a href="mailto:engage@quantariadvisorypartners.co.ke">engage@quantariadvisorypartners.co.ke</a></p>
-    <p>📞 <a href="tel:+254796529295">+254 796 529 295</a></p>
-  </section>
+    <div class="service-card">
+      <h3>Lender & Investor Engagement Support</h3>
+      <p>
+        Supporting management teams during financing discussions by managing information flows,
+        responding to due diligence requests, and helping structure clear, transparent engagement.
+      </p>
+    </div>
 
-  <footer>
-    © 2025 Quantari Advisory Partners Limited. All Rights Reserved.
-  </footer>
+    <div class="service-card">
+      <h3>Facility Optimisation & Restructuring</h3>
+      <p>
+        Reviewing existing debt and financing structures to improve sustainability, optimise pricing,
+        and support refinancing or restructuring where appropriate.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Transition & Stabilisation Support</h3>
+      <p>
+        Selective support during periods of operational or financial transition where clarity and
+        disciplined structuring are required to stabilise performance and protect lender confidence.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="approach" class="section">
+  <h2>Our Role in the Capital Ecosystem</h2>
+  <p style="max-width:900px; margin:0 auto; text-align:center;">
+    Quantari does not lend or invest. Our role is to bridge the gap between operating businesses
+    and institutional capital by preparing transactions that can be efficiently deployed through
+    banks, DFIs, private credit funds, and risk-sharing or blended-finance structures.
+    We work collaboratively with capital providers and respect institutional risk frameworks.
+  </p>
+</section>
+
+<section class="founder">
+  “After more than 17 years in corporate and SME banking, I have seen how many viable businesses fail to
+  access institutional capital—not due to lack of potential, but because their transactions are not
+  structured to institutional standards. Quantari was created to address this gap with calm judgement,
+  clear information, and disciplined structuring.”
+  <br><br>
+  — <strong>Oliver K. Gitahi</strong>, Founder & Principal Advisor
+</section>
+
+<section id="contact" class="section" style="text-align:center;">
+  <h2>Get in Touch</h2>
+  <p>
+    For institutions, partners, and businesses seeking structured engagement:
+  </p>
+  <p>📧 <a href="mailto:engage@quantariadvisorypartners.co.ke">engage@quantariadvisorypartners.co.ke</a></p>
+  <p>📞 <a href="tel:+254796529295">+254 796 529 295</a></p>
+</section>
+
+<footer>
+  © 2026 Quantari Advisory Partners Limited. All Rights Reserved.
+</footer>
 
 </body>
 </html>
+
