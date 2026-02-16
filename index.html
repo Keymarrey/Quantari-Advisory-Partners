@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 
-<title>Quantari Advisory Partners | Corporate Finance & Transaction Structuring</title>
+<title>Quantari Advisory Partners | Corporate Finance & Transaction Advisory in Kenya</title>
 
-<meta name="description" content="Quantari Advisory Partners is a Kenya-based corporate finance and transaction structuring firm preparing bankable, investment-ready opportunities for SMEs, lenders, DFIs and institutional capital providers.">
+<meta name="description" content="Quantari Advisory Partners supports the structuring of bankable, investment-ready transactions for SMEs and mid-market businesses engaging lenders, DFIs and institutional capital.">
 
 <link rel="canonical" href="https://www.quantariadvisorypartners.co.ke/">
 
@@ -14,123 +14,137 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
 <style>
-
 :root {
-  --primary:#0b1f3a;
-  --secondary:#0f3d63;
-  --accent:#0a76d9;
-  --light-bg:#f5f7fa;
-  --text-dark:#1a1a1a;
+  --primary: #0b1f3a;
+  --secondary: #0f3d63;
+  --accent: #0a76d9;
+  --light-bg: #f5f7fa;
+  --text-dark: #1a1a1a;
 }
 
 body {
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:white;
-  color:var(--text-dark);
-  line-height:1.75;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
 
 nav {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:22px 40px;
-  background:white;
-  border-bottom:1px solid #f0f0f0;
-  position:sticky;
-  top:0;
-  z-index:100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.logo {
-  font-size:1.5rem;
-  font-weight:700;
-  color:var(--primary);
-  display:flex;
-  align-items:center;
+nav .logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-  list-style:none;
-  display:flex;
-  gap:28px;
-  margin:0;
-  padding:0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  text-decoration:none;
-  color:var(--primary);
-  font-weight:500;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
 }
 
 .hero {
-  padding:130px 40px 90px;
-  background:white;
-  text-align:center;
+  padding: 140px 40px;
+  background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)),
+  url('https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/refs/heads/main/assets/premium_photo-1663013625960-b54f861e4074.avif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size:2.9rem;
-  max-width:820px;
-  margin:0 auto 25px;
-  font-weight:700;
+  font-size: 2.8rem;
+  max-width: 850px;
+  margin: 0 auto 20px;
+  font-weight: 700;
 }
 
 .hero p {
-  max-width:820px;
-  margin:0 auto 25px;
-  font-size:1.18rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.2rem;
+}
+
+.hero .cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
 .section {
-  padding:90px 40px;
-}
-
-.section.alt {
-  background:var(--light-bg);
-}
-
-.content {
-  max-width:980px;
-  margin:0 auto;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
 }
 
 .section h2 {
-  font-size:1.9rem;
-  color:var(--primary);
-  margin-bottom:28px;
-  text-align:left;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
-.section p {
-  margin-bottom:22px;
-  font-size:1.05rem;
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:28px;
-  margin-top:35px;
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.card {
-  background:white;
-  padding:28px;
-  border-radius:10px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+.founder {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  max-width: 900px;
+  margin: 70px auto;
+  font-size: 1.05rem;
 }
 
-.leadership {
-  background:white;
-  padding:60px 40px;
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
 }
 
 .linkedin-btn {
   display:inline-block;
-  margin-top:16px;
+  margin-top:12px;
   padding:10px 18px;
   background:#0a66c2;
   color:white;
@@ -138,15 +152,6 @@ nav ul li a {
   text-decoration:none;
   font-weight:600;
 }
-
-footer {
-  background:var(--primary);
-  color:white;
-  text-align:center;
-  padding:28px;
-  margin-top:60px;
-}
-
 </style>
 
 </head>
@@ -155,138 +160,91 @@ footer {
 
 <nav>
 <div class="logo">
+<img src="https://raw.githubusercontent.com/Keymarrey/Quantari-Advisory-Partners/main/assets/logo.png"
+style="height:120px; margin-right:14px;">
 Quantari Advisory Partners
 </div>
-
 <ul>
-<li><a href="#positioning">Where We Operate</a></li>
-<li><a href="#practice">Practice Areas</a></li>
-<li><a href="#approach">Approach</a></li>
-<li><a href="#leadership">Leadership</a></li>
+<li><a href="#services">What We Do</a></li>
+<li><a href="#approach">Our Approach</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
 <section class="hero">
-
 <h1>Quantari Advisory Partners</h1>
-
 <p>
 Structuring transactions so lenders, DFIs and institutional capital can engage with clarity, discipline and confidence.
 </p>
-
-<p>
-Quantari operates at the point where financing outcomes are shaped — before capital is approached and where transaction readiness determines engagement quality.
-</p>
-
+<a class="cta" href="#services">Learn How We Work</a>
 </section>
 
-<section id="positioning" class="section alt">
-<div class="content">
-
-<h2>Where We Operate</h2>
-
-<p>
-Our work sits between operating businesses and institutional capital — supporting the preparation and structuring of transactions so engagement with banks, development finance institutions, private credit and structured capital providers is grounded and execution-ready.
+<section class="section">
+<h2>Who We Work With</h2>
+<p style="text-align:center; max-width:900px; margin:0 auto;">
+We work with operating SMEs and mid-market businesses preparing for structured engagement with institutional financing — as well as lenders, partners and stakeholders navigating complex financing situations.
 </p>
-
-<p>
-The objective is not access to capital in itself, but ensuring opportunities are articulated and structured in a way capital can respond to.
-</p>
-
-</div>
 </section>
 
-<section id="practice" class="section">
-<div class="content">
+<section id="services" class="section">
+<h2>What We Do</h2>
+<div class="services">
 
-<h2>What This Looks Like in Practice</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Working Capital & Trade Finance Structuring</h3>
-<p>Aligning facility structures with operating cycles and lender expectations.</p>
+<div class="service-card">
+<h3>Transaction Structuring</h3>
+<p>
+Supporting the preparation and structuring of opportunities so they are aligned to institutional credit and investment expectations before capital engagement begins.
+</p>
 </div>
 
-<div class="card">
-<h3>Expansion & Capex Financing Preparation</h3>
-<p>Structuring propositions capable of withstanding institutional credit scrutiny.</p>
-</div>
-
-<div class="card">
-<h3>Debt Positioning & Restructuring</h3>
-<p>Clarifying financing arrangements where complexity exists.</p>
-</div>
-
-<div class="card">
+<div class="service-card">
 <h3>Credit & Investment Readiness</h3>
-<p>Preparing opportunities for engagement with banks, DFIs and private capital.</p>
+<p>
+Preparing businesses for engagement with banks, DFIs and private capital through disciplined articulation of cashflows, risks and financing requirements.
+</p>
 </div>
 
-<div class="card">
-<h3>Lender & Investor Engagement Support</h3>
-<p>Supporting structured dialogue and due diligence preparation.</p>
+<div class="service-card">
+<h3>Lender & Investor Engagement</h3>
+<p>
+Supporting structured dialogue, information flows and due diligence preparation during financing processes.
+</p>
 </div>
 
+<div class="service-card">
+<h3>Debt Positioning & Restructuring</h3>
+<p>
+Clarifying financing arrangements and structuring pathways where complexity or misalignment exists.
+</p>
 </div>
 
 </div>
 </section>
 
-<section id="approach" class="section alt">
-<div class="content">
-
-<h2>Approach</h2>
-
-<p>
-Transactions are shaped long before they reach a credit committee or investment desk.
+<section id="approach" class="section">
+<h2>Our Role in the Capital Ecosystem</h2>
+<p style="max-width:900px; margin:0 auto; text-align:center;">
+Quantari operates upstream of financing — supporting how transactions are structured, articulated and prepared before they reach lenders, DFIs and institutional capital providers. The focus is on preparation discipline, transaction clarity and engagement coherence.
 </p>
-
-<p>
-Clarity of cashflows, risk allocation, financing structure and engagement discipline often determines whether capital is deployed, delayed or withdrawn.
-</p>
-
-<p>
-Our work focuses on that preparatory layer — where confidence is built and financing processes begin to move with coherence.
-</p>
-
-</div>
 </section>
 
-<section id="leadership" class="section">
-<div class="content">
-
-<h2>Leadership</h2>
-
-<p>
+<section class="founder">
+<strong>Leadership</strong>
+<br><br>
 Quantari Advisory Partners was founded by Oliver Gitahi after more than 17 years in corporate and SME banking, structuring and managing financing relationships across operating businesses and institutional capital providers.
-</p>
-
-<p>
-His work centres on bringing disciplined structuring, institutional perspective and transaction clarity into financing preparation.
-</p>
-
-</div>
+<br><br>
+His work focuses on bringing disciplined structuring, institutional perspective and transaction clarity into financing preparation.
 </section>
 
-<section id="contact" class="section alt">
-<div class="content">
-
+<section id="contact" class="section" style="text-align:center;">
 <h2>Contact</h2>
-
-<p>
-For institutions, partners and businesses seeking structured engagement:
-</p>
-
+<p>For institutions, partners and businesses seeking structured engagement:</p>
 <p>📧 engage@quantariadvisorypartners.co.ke</p>
 <p>📞 +254 796 529 295</p>
 
 <a class="linkedin-btn" href="https://www.linkedin.com/company/quantari-advisory-partners-limited/" target="_blank">
 Visit Quantari on LinkedIn
 </a>
-
-</div>
 </section>
 
 <footer>
