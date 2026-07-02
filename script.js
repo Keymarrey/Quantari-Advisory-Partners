@@ -30,36 +30,17 @@ if (contactForm && formNote) {
         formNote.textContent = "Sending your enquiry...";
 
         emailjs.sendForm(
-    "service_8yydc3f",
-    "template_nu3czhs",
-    contactForm
-)
-.then(function () {
-
-    // Send acknowledgement email to the client
-    return emailjs.sendForm(
-        "service_8yydc3f",
-        "template_hg8sawt",
-        contactForm
-    );
-
-})
-.then(function () {
-
-    formNote.textContent =
-        "Thank you. Your enquiry has been sent successfully. A confirmation email has also been sent to your email address.";
-
-    contactForm.reset();
-
-})
-.catch(function (error) {
-
-    console.error(error);
-
-    formNote.textContent =
-        "Sorry, something went wrong. Please try again.";
-
-});
+            "service_8yydc3f",
+            "template_nu3czhs",
+            contactForm
+        )
+        .then(function () {
+            formNote.textContent = "Thank you. Your enquiry has been sent successfully.";
+            contactForm.reset();
+        })
+        .catch(function (error) {
+            console.error(error);
+            formNote.textContent = "Sorry, something went wrong. Please try again.";
         });
     });
 }
