@@ -17,6 +17,32 @@ const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!en
 /* Observe reveal elements and counters as independent animation targets. */
 revealElements.forEach(element=>observer.observe(element));counters.forEach(counter=>observer.observe(counter));
 /* Validate the static contact form before handing off to the email client. */
-if(contactForm&&formNote){contactForm.addEventListener("submit",event=>{if(!contactForm.checkValidity()){event.preventDefault();formNote.textContent="Please complete each field before sending your enquiry.";return}formNote.textContent="Opening your email client to send the enquiry to Quantari."})}
+/* Send the contact form using EmailJS instead of opening an email client. */
+if (contactForm && formNote) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+            formNote.textContent = "Please complete each field before sending your enquiry.";
+            return;
+        }
+
+        formNote.textContent = "Sending your enquiry...";
+
+        emailjs.sendForm(
+            "service_8yydc3f",
+            "template_nu3czhs",
+            contactForm
+        )
+        .then(function () {
+            formNote.textContent = "Thank you. Your enquiry has been sent successfully.";
+            contactForm.reset();
+        })
+        .catch(function (error) {
+            console.error(error);
+            formNote.textContent = "Sorry, something went wrong. Please try again.";
+        });
+    });
+}
 /* Keep the header state current on load and scroll. */
 updateHeader();window.addEventListener("scroll",updateHeader,{passive:true});
