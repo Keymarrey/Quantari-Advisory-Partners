@@ -29,4 +29,8 @@ The contact form uses a static `mailto:` action addressed to `engage@quantariadv
 
 ## Brand Asset
 
-The site uses the official company logo at `assets/images/logo.png` in the navigation, footer and organization metadata.
+The site uses the official company logo at `assets/images/logo-horizontal.png` in the navigation, footer and organization metadata.
+
+## Hero Image
+
+The homepage hero uses `assets/images/hero-boardroom.webp`, with `assets/images/hero-boardroom.jpg` kept as a high-quality fallback/source export and `assets/images/og-image.jpg` used for social previews.
